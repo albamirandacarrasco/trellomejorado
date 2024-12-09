@@ -1,0 +1,123 @@
+/* Tema claro por defecto */
+:root {
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+    --border-color: #ced4da;
+    --card-bg: #ffffff;
+    --button-bg: #007bff;
+    --button-text: #ffffff;
+    --button-hover-bg: #0056b3;
+}
+
+/* Tema oscuro */
+[data-theme="oscuro"] {
+    --background-color: #2c2c34;
+    --text-color: #eaeaea;
+    --border-color: #444;
+    --card-bg: #3a3a42;
+    --button-bg: #4b5267;
+    --button-text: #ffffff;
+    --button-hover-bg: #61677d;
+}
+
+/* Tema pastel */
+[data-theme="pastel"] {
+    --background-color: #fdf1f0;
+    --text-color: #5b5756;
+    --border-color: #ffdede;
+    --card-bg: #fff5f4;
+    --button-bg: #f7b8c3;
+    --button-text: #ffffff;
+    --button-hover-bg: #f497a7;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+.tarea input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.modos {
+    margin: 20px 0;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.categoria {
+    width: 30%;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+}
+
+.categoria h2 {
+    color: var(--text-color);
+}
+
+.lista-tareas {
+    min-height: 150px;
+    border: 1px dashed var(--border-color);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--background-color);
+}
+
+.tarjeta {
+    background-color: var(--card-bg);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+}

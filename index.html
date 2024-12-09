@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello mejorado</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Trello Mejorado</h1>
+
+        <div class="tarea">
+            <input type="text" id="tarea" name="tarea" placeholder="Escribe una nueva tarea.">
+            <button type="submit" id="boton-agregar">Agregar Tarea</button>
+        </div>
+
+        <div class="modos">
+            <button id="boton-claro" data-theme="claro" >☀️ Claro</button>
+            <button id="boton-oscuro" data-theme="oscuro">🌙 Oscuro</button>
+            <button id="boton-pastel" data-theme="pastel">✏️ Pastel</button>
+        </div>
+
+        <div class="categorias">
+            <div class="categoria" data-category="pendiente">
+                <h2>Pendiente <span class="contador">(0)</span></h2>
+                <div class="lista-tareas"></div>
+            </div>
+            <div class="categoria" data-category="enprogreso">
+                <h2>En Progreso <span class="contador">(0)</span></h2>
+                <div class="lista-tareas"></div>
+            </div>
+            <div class="categoria" data-category="completado">
+                <h2>Completado <span class="contador">(0)</span></h2>
+                <div class="lista-tareas"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
